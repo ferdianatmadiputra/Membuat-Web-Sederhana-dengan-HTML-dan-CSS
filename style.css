@@ -1,0 +1,153 @@
+/* write your code here */
+  body, html {
+    width: 100vw;
+    height: 100vh;
+    max-width:100%;
+    padding: 0;
+    margin: 0;
+    background-color: #f5f5f5;
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+  .navbar .ulnavbar {
+    display: block;
+    float:right;
+    margin: 40px 100px;
+  }
+  
+  .navmenu {
+    display: inline;
+    margin: 0 10px;
+    transition: margin 2s;
+    transition-timing-function: ease-out;
+  }
+  
+  .navmenu:hover {
+    transition: margin 2s;
+    transition-timing-function: ease-out;
+    margin: 0 20px;
+  }
+
+  .nav-link {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 30px;
+    color: black;
+  }
+
+  .navmenu .tooltiptext {
+    font-size: 20px;
+    visibility: hidden;
+    width: 200px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 10px 10px;
+    border-radius: 12px;
+    margin-left: -200px;
+    top: 90px;
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .navmenu:hover .tooltiptext {
+    visibility: visible;
+  }
+  
+  .active,
+  .nav-link:hover {
+      color: black;
+  }
+
+
+  .main {
+    margin-left: 15vw;
+    position: absolute;
+    top: 45%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  
+  h1 {
+    text-align: left;
+    font-size: 160px;
+    font-family: 'Ubuntu', sans-serif;
+    line-height:1;
+    font-style:italic;
+    display: block;
+    margin: 0 0 0 0;
+    position:static;
+  }
+
+  .wordCarousel {
+    font-size: 36px;
+    font-weight: 100;
+    margin-top: 40px;
+    width: 400px;
+  }
+  .wordCarousel div {
+    overflow: hidden;
+    position: relative;
+    height: 65px;
+    padding-top: 10px;
+    margin-top: -20px;
+    float: left;
+    left: 163px;
+    bottom: 32px;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+
+  li {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    padding: 0 10px;
+    height: 45px;
+    margin-bottom: 45px;
+    display: block;
+  }
+
+  .flipLoop {
+    animation: flipLoop 10s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+  }
+
+  @keyframes flipLoop {
+    0% { margin-top: -360px; }
+    5% { margin-top: -270px; }
+    25% { margin-top: -270px; }
+    30% { margin-top: -180px; }
+    50% { margin-top: -180px; }
+    55% { margin-top: -90px; }
+    75% { margin-top: -90px; }
+    80% { margin-top: 0px; }
+    99.99% { margin-top: 0px; }
+    100% { margin-top: -270px; }
+  }
+
+
+  .socials {
+    float:left;
+    margin-top: 20px;
+    z-index: 1;
+    display: block;
+    position: absolute;
+    
+  }
+  
+  .socials a{
+    text-decoration: none;
+
+  }
+
+  .iconSocial {
+    height: 50px;
+    width: 50px;
+    margin: 0px 10px 0px 10px;
+    opacity: 0.6;
+  }
+
+  .iconSocial:hover {
+    opacity: 0.9;
+    text-decoration:none;
+  }
